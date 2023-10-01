@@ -1,0 +1,27 @@
+[package]
+name = "module00-ex04"
+authors = ["Noa Moulin <nomoulin@student.42.fr>"]
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "my answer to the fifth exercise of the first module of 42's Rust Piscine"
+
+[profile.no-overflow]
+inherits = "dev"
+overflow-checks = false
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "other"
+path = "src/other.rs"
+
+[[bin]]
+name = "overflow-test"
+path = "src/overflow.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
